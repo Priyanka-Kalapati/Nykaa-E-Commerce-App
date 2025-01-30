@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nykaa Fashion E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .header {
+            background-color:white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .header .logo img {
+            height: 100px;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-grow: 1;
+        }
+        .header .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .header .nav-links a:hover {
+            background-color: #e53755;
+        }
+        .header .search-bar {
+            flex-grow: 2;
+            margin: 0 20px;
+        }
+        .header .search-bar input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border-color: black;
+            border:none;
+        }
+        .header .user-options {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .header .user-options a {
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .header .user-options a.wishlist, 
+        .header .user-options a.cart {
+            color: black;
+        }
+        .header .user-options a.account {
+            color: black;
+        }
+        .header .user-options a:hover {
+            background-color: #e53755;
+        }
+        .header .nav-links a {
+            color: black; 
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .header .nav-links a:hover {
+            background-color: #e53755;
+        }
+
+        .main-banner {
+            background-image: url("images/banner.jpg");
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .main-banner .banner-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            background-color: white;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            color: #ff3f6c;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color:palevioletred;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/Nykaa logo.jpg" alt="Nykaa Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Women</a>
+            <a href="#">Men</a>
+            <a href="#">Kids</a>
+            <a href="#">Home</a>
+            <a href="#">All Brands</a>
+            <a href="#">More</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products, brands, and more">
+        </div>
+        
+        <div class="user-options">
+            <a href="#" class="account">Account</a>
+            <a href="#" class="wishlist">Wishlist</a>
+            <a href="#" class="cart">Cart</a>
+        </div>
+    </div>
+
+    <div class="main-banner">
+        <div class="banner-text">Discover the Latest Trends</div>
+    </div>
+    <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="images/p1.jpg" alt="">
+                <div class="product-info">
+                    <div class="product-title">Up to 50% off <br> Stylish and Elegant Dresses</div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p2.jpg" alt="">
+                <div class="product-info">
+                    <div class="product-title">Up to 65% off <br> Extra 10% off</div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p3.jpg" alt="">
+                <div class="product-info">
+                    <div class="product-title">Up to 70% off <br> Trendy stylish menswear </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/P4.jpg" alt="">
+                <div class="product-info">
+                    <div class="product-title">Up to 65 % off <br> Cute fits for lil'ones </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p5.jpg" alt="">
+                <div class="product-info">
+                    <div class="product-title">Up to 50 % off <br> 8 till late needs </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p6.jpg" alt="Product 4">
+                <div class="product-info">
+                    <div class="product-title">Min 40 % off <br> Dynamic atheletic styles </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p7.jpg" alt="Product 4">
+                <div class="product-info">
+                    <div class="product-title">Min 20 % off <br> Ethnic printed anarkalis  </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="images/p8.jpg" alt="Product 4">
+                <div class="product-info">
+                    <div class="product-title">Up to 40 % off <br> For aesthetic home </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <p>&copy; 2024 Nykaa Fashion. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+    </div>
+</body>
+</html>
